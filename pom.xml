@@ -18,7 +18,7 @@
   <build>
     <plugins>
       <plugin>
-        <!-- Build an executable JAR -->
+        <!-- Build an executable JAR 
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.0.2</version>
@@ -30,9 +30,26 @@
               <mainClass>com.mycompany.app.App</mainClass>
             </manifest>
           </archive>
-        </configuration>
+        </configuration> -->
+        <groupId>org.sonatype.plugins</groupId>
+   <artifactId>nexus-staging-maven-plugin</artifactId>
+   <version>1.3</version>
+   <executions>
+      <execution>
+         <id>default-deploy</id>
+         <phase>deploy</phase>
+         <goals>
+            <goal>deploy</goal>
+         </goals>
+      </execution>
+   </executions>
+   <configuration>
+      <serverId>nexus-snapshots</serverId>
+      <nexusUrl>http://35.226.8.241:8081/</nexusUrl>
+      <skipStaging>true</skipStaging>
+   </configuration>
       </plugin>
-    </plugins>
+    
   </build>
     <distributionManagement>
     <repository>
@@ -40,4 +57,5 @@
       <url>http://35.226.8.241:8081/repository/maven-releases/</url>
     </repository>
   </distributionManagement>
+    </plugins>
 </project>
