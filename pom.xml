@@ -18,7 +18,7 @@
    <!-- <build>
     <plugins>
       <plugin>
-        <!-- Build an executable JAR 
+      Build an executable JAR 
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.0.2</version>
@@ -33,7 +33,7 @@
         </configuration> 
       </plugin>
     </plugins>
-  </build>-->
+  </build> -->
   <build>
 <pluginManagement>  
 <plugin>
@@ -73,8 +73,8 @@
       </execution>
    </executions>
    <configuration>
-      <serverId>nexus</serverId>
-      <nexusUrl>http://localhost:8081/nexus/</nexusUrl>
+      <serverId>nexus-snapshots</serverId>
+      <nexusUrl>http://35.226.8.241:8081/</nexusUrl>
       <skipStaging>true</skipStaging>
    </configuration>
 </plugin>
