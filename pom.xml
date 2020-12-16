@@ -79,16 +79,14 @@
       <skipStaging>true</skipStaging>
    </configuration>
 </plugin>
-   </plugins>
-   
-  </build>
-   <repository>
-    <distributionManagement>
+</plugins>  
+</build>
+<distributionManagement>
     <snapshotRepository>
       <id>nexus-snapshots</id>
       <url>http://35.226.8.241:8081/repository/maven-snapshots//</url>
     </snapshotRepository>
   </distributionManagement>
-      </repository>
+  
     
 </project>
