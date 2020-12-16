@@ -49,7 +49,7 @@
       <skipStaging>true</skipStaging>
    </configuration>
       </plugin>
-    
+    </plugins>
   </build>
     <distributionManagement>
     <repository>
@@ -57,5 +57,5 @@
       <url>http://35.226.8.241:8081/repository/maven-releases/</url>
     </repository>
   </distributionManagement>
-    </plugins>
+    
 </project>
